@@ -9,9 +9,7 @@ Dependencies:
 -added brightness key bindings XF86
 -added Gizmoguy's acpi battery widget 
 -changed default layout to layout 2
--added volume key bindings XF86 +/-
-
+-added volume key bindings XF86 +/-/mute
 
 Todo:
--Bind mute key
 -Add Wifi Widget 

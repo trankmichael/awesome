@@ -254,6 +254,8 @@ globalkeys = awful.util.table.join(
     awful.util.spawn_with_shell("canberra-gtk-play --file=/usr/share/sounds/freedesktop/stereo/audio-volume-change.oga;amixer -c 1 set Master 5%+") end),
 	awful.key({ }, "XF86AudioLowerVolume", function ()
     awful.util.spawn_with_shell("canberra-gtk-play --file=/usr/share/sounds/freedesktop/stereo/audio-volume-change.oga;amixer -c 1 set Master 5%-") end),
+    awful.key({ }, "XF86AudioMute", function ()
+    awful.util.spawn_with_shell("canberra-gtk-play --file=/usr/share/sounds/freedesktop/stereo/audio-volume-change.oga;amixer -D pulse set Master toggle") end),
 
 
 
