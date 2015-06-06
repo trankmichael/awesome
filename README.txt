@@ -1,6 +1,17 @@
 changes to rc.lua
 =================
+Dependencies:
+	xbacklight
+	acpi
+	xfce4-mixer
+	xfce4-volumed
+
 -added brightness key bindings XF86
 -added Gizmoguy's acpi battery widget 
--changed default layout
-test2
+-changed default layout to layout 2
+-added volume key bindings XF86 +/-
+
+
+Todo:
+-Bind mute key
+-Add Wifi Widget 

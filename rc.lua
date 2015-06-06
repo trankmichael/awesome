@@ -248,6 +248,15 @@ globalkeys = awful.util.table.join(
 	awful.key({ }, "XF86MonBrightnessUp", function ()
     awful.util.spawn("xbacklight -inc 15") end),
 
+	-- handling volume control 
+	-- plays default "popping" sound when volume is changed
+	awful.key({ }, "XF86AudioRaiseVolume", function ()
+    awful.util.spawn_with_shell("canberra-gtk-play --file=/usr/share/sounds/freedesktop/stereo/audio-volume-change.oga;amixer -c 1 set Master 5%+") end),
+	awful.key({ }, "XF86AudioLowerVolume", function ()
+    awful.util.spawn_with_shell("canberra-gtk-play --file=/usr/share/sounds/freedesktop/stereo/audio-volume-change.oga;amixer -c 1 set Master 5%-") end),
+
+
+
     awful.key({ modkey,           }, "j",
         function ()
             awful.client.focus.byidx( 1)
