@@ -12,4 +12,5 @@ Dependencies:
 -added volume key bindings XF86 +/-/mute
 
 Todo:
+
 -Add Wifi Widget 
